@@ -13,9 +13,4 @@ class Item extends Model
         'price',
         'stock_quantity'
     ];
-
-    public function product()
-    {
-        return $this->belongsTo(Product::class);
-    }
 }
