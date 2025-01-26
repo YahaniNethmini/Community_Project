@@ -27,6 +27,11 @@ class ItemResource extends Resource
                     ->label('Item Name')
                     ->required(),
 
+                Forms\Components\Select::make('category_id')
+                    ->relationship('category', 'name')
+                    ->label('Category')
+                    ->required(),
+
                 // Textarea for Description
                 Forms\Components\Textarea::make('description')
                     ->label('Description')
@@ -44,6 +49,12 @@ class ItemResource extends Resource
                     ->label('Price')
                     ->numeric()
                     ->required(),
+
+                // File Upload for Image
+                Forms\Components\FileUpload::make('image')
+                    ->image()
+                    ->directory('items')
+                    ->required(),
             ]);
     }
 
@@ -53,6 +64,8 @@ class ItemResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->label('Item Name'),
+                Tables\Columns\TextColumn::make('category.name')
+                    ->label('Category'),
                 Tables\Columns\TextColumn::make('stock_quantity')
                     ->label('Quantity'),
                 Tables\Columns\TextColumn::make('price')
@@ -63,6 +76,8 @@ class ItemResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\ViewAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

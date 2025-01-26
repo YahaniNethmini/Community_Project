@@ -3,20 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Item extends Model
+class Category extends Model
 {
     protected $fillable = [
         'name',
         'description',
         'image',
-        'price',
-        'stock_quantity',
-        'category_id',
     ];
 
-    public function category()
+    public function items(): HasMany
     {
-        return $this->belongsTo(Category::class);
+        return $this->hasMany(Item::class);
     }
 }
