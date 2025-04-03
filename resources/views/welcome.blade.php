@@ -47,4 +47,36 @@
             </div>
         </div>
     </section>
+
+    <div class="container d-flex justify-content-center text-center mt-5">
+        <div class="container-wrap">
+            <div class="wrap d-md-flex align-items-xl-end">
+                <div class="info">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-phone"></span></div>
+                            <div class="text">
+                                <h3 style="color: white;">077 777 777</h3>
+                                <p style="color: white;">Description text Description text Description text</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-my_location"></span></div>
+                            <div class="text">
+                                <h3 style="color: white;">Desh E-Mart</h3>
+                                <p style="color: white;">Pabahinna, Balangoda Description text</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="icon"><span class="icon-clock-o"></span></div>
+                            <div class="text">
+                                <h3 style="color: white;">Open Monday-Friday</h3>
+                                <p style="color: white;">8:00am - 9:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
