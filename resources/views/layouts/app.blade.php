@@ -51,6 +51,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="{{ route('services') }}" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="{{ route('items') }}" class="nav-link">Items</a></li>
                     <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
 
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
