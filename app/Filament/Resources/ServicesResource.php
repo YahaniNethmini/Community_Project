@@ -30,8 +30,6 @@ class ServicesResource extends Resource
                     ->label('Description')
                     ->rows(5)
                     ->required(),
-                Forms\Components\TextInput::make('image')
-                    ->label('Image'),
                 Forms\Components\TextInput::make('price')
                     ->label('Price')
                     ->numeric()

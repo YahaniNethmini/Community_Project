@@ -139,34 +139,30 @@
                     <div class="heading-section text-md-right ftco-animate">
                         <span class="subheading">Discover</span>
                         <h2 style="color: white;" class="mb-4">Our Services</h2>
-                        <p style="color: white;" class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        <p style="color: white;" class="mb-4">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="menu-entry">
-                                <a href="#" class="img" style="background-image: url({{ asset('assets/images/bg_3.jpeg') }});"></a>
+                        @foreach($services as $service)
+                            <div class="col-md-6">
+                                <div class="menu-entry service-card">
+                                    <a href="#" class="img" style="background-image: url({{ asset($service->image ?? 'assets/images/bg_3.jpeg') }});"></a>
+                                    <div class="service-info">
+                                        <h5>{{ $service->name }}</h5>
+                                        <p>{{ $service->description }}</p>
+                                        <span class="service-price">${{ $service->price }}</span>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="menu-entry mt-lg-4">
-                                <a href="#" class="img" style="background-image: url({{ asset('assets/images/bg_3.jpeg') }});"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="menu-entry">
-                                <a href="#" class="img" style="background-image: url({{ asset('assets/images/bg_3.jpeg') }});"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="menu-entry mt-lg-4">
-                                <a href="#" class="img" style="background-image: url({{ asset('assets/images/bg_3.jpeg') }});"></a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
 @endsection

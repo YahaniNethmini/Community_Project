@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -16,11 +17,12 @@ class WelcomeController extends Controller
     {
         // Fetch all items from the database
         $items = Item::all();
+        $services = Service::all();
 
         // You can also limit the number of items or add conditions
         // $items = Item::take(8)->get(); // Get only 8 items
         // $items = Item::where('stock_quantity', '>', 0)->get(); // Only items in stock
 
-        return view('welcome', compact('items'));
+        return view('welcome', compact('items','services'));
     }
 }
