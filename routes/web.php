@@ -1,10 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WelcomeController;
+use App\Http\Controllers\ItemController;
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', [WelcomeController::class, 'welcome'])->name('home');
+
+// Item routes
+Route::get('/items', [ItemController::class, 'index'])->name('items.index');
+Route::get('/items/create', [ItemController::class, 'create'])->name('items.create');
+Route::post('/items', [ItemController::class, 'store'])->name('items.store');
+Route::get('/item/{item}', [ItemController::class, 'show'])->name('item.single');
+//Route::get('/', function () {
+//    return view('welcome');
+//})->name('home');
 
 Route::get('/home', function () {
     return view('welcome');

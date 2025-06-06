@@ -24,7 +24,7 @@ class ServicesResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->label('Service Name')
+                    ->label('Item Name')
                     ->required(),
                 Forms\Components\Textarea::make('description')
                     ->label('Description')
@@ -44,7 +44,7 @@ class ServicesResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->label('Service Name'),
+                    ->label('Item Name'),
                 Tables\Columns\TextColumn::make('description')
                     ->label('Description'),
                 Tables\Columns\TextColumn::make('price')

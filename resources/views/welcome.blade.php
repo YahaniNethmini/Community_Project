@@ -39,7 +39,7 @@
 
                     <div class="col-md-8 col-sm-12 text-center ftco-animate">
                         <span class="subheading" style="color:#9a1ea6; font-size: 50px; font-weight: bolder;">Welcome</span>
-                        <h1 class="mb-4">Innovative Products for a Smarter Life</h1>
+                        <h1 class="mb-4">Innovative items for a Smarter Life</h1>
                         <p class="mb-4 mb-md-5">Discover premium electronics and accessories designed to enhance your experience.</p><p>
                     </div>
 
@@ -100,25 +100,25 @@
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
                     <span class="subheading">Discover</span>
-                    <h2 style="color: white;" class="mb-4">Best Coffee Sellers</h2>
-                    <p style="color: white;">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <h2 style="color: white;" class="mb-4">Best Electric Items Sellers</h2>
+                    <p style="color: white;">This is description of the topic...................</p>
                 </div>
             </div>
             <div class="row">
 
-{{--                @foreach($products as $product)--}}
-{{--                    <div class="col-md-3">--}}
-{{--                        <div class="menu-entry">--}}
-{{--                            <a href="#" class="img" style="background-image: url({{ asset('assets/images/'.$product->image) }});"></a>--}}
-{{--                            <div class="text text-center pt-4">--}}
-{{--                                <h3><a href="{{ route('product.single', $product->id) }}">{{ $product->name }}</a></h3>--}}
-{{--                                <p style="color: white;">{{ $product->description }}</p>--}}
-{{--                                <p class="price"><span>{{ $product->price }}</span></p>--}}
-{{--                                <p><a href="{{ route('product.single', $product->id) }}" class="btn btn-primary btn-outline-primary">Show</a></p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                @endforeach--}}
+                @foreach($items as $item)
+                    <div class="col-md-3">
+                        <div class="menu-entry">
+                            <a href="#" class="img" style="background-image: url({{ asset('assets/images/'.$item->image) }});"></a>
+                            <div class="text text-center pt-4">
+                                <h3><a href="{{ route('item.single', $item->id) }}">{{ $item->name }}</a></h3>
+                                <p style="color: white;">{{ $item->description }}</p>
+                                <p class="price"><span>Rs. {{ $item->price }}</span></p>
+                                <p><a href="{{ route('item.single', $item->id) }}" class="btn btn-primary btn-outline-primary">Show</a></p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
 
             </div>
         </div>
