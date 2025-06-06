@@ -95,6 +95,7 @@
         </div>
     </section>
 
+    {{--    Items--}}
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
@@ -106,10 +107,15 @@
             </div>
             <div class="row">
 
+                @php
+                    use Illuminate\Support\Facades\Storage;
+                @endphp
+
                 @foreach($items as $item)
                     <div class="col-md-3">
                         <div class="menu-entry">
-                            <a href="#" class="img" style="background-image: url({{ asset('assets/images/'.$item->image) }});"></a>
+                            <a href="" class="img" style="background-image: url({{ Storage::url($item->image) }});"></a>
+
                             <div class="text text-center pt-4">
                                 <h3><a href="{{ route('item.single', $item->id) }}">{{ $item->name }}</a></h3>
                                 <p style="color: white;">{{ $item->description }}</p>
@@ -124,6 +130,8 @@
         </div>
     </section>
 
+
+{{--    Services--}}
     <section class="ftco-section">
         <div class="container">
             <div class="row align-items-center">
