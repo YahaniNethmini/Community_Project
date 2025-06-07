@@ -26,9 +26,7 @@ Route::get('/home', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/services', function () {
-    return view('services');
-})->name('services');
+Route::get('/services', [ServiceController::class, 'servicesPage'])->name('services');
 
 Route::get('/items', [PageController::class, 'items'])->name('items');
 

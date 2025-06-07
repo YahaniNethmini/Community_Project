@@ -9,6 +9,15 @@ use Illuminate\Http\Request;
 class ServiceController extends Controller
 {
     /**
+     * Display a listing of services for the main services page.
+     */
+    public function servicesPage()
+    {
+        $services = Service::all();
+        return view('pages.services', compact('services'));
+    }
+
+    /**
      * Display a listing of the services.
      *
      * @return \Illuminate\View\View
