@@ -20,7 +20,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Show the form for creating a new item.
+     * Show the form for creating a new items.
      *
      * @return \Illuminate\View\View
      */
@@ -30,7 +30,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Store a newly created item in storage.
+     * Store a newly created items in storage.
      *
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
@@ -52,7 +52,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Display the specified item.
+     * Display the specified items.
      *
      * @param \App\Models\Item $item
      * @return \Illuminate\View\View
@@ -60,5 +60,6 @@ class ItemController extends Controller
     public function show(Item $item)
     {
         return view('items.show', compact('item'));
+//        return view('items.show', compact('item'));
     }
 }

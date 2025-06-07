@@ -117,10 +117,11 @@
                             <a href="" class="img" style="background-image: url({{ Storage::url($item->image) }});"></a>
 
                             <div class="text text-center pt-4">
-                                <h3><a href="{{ route('item.single', $item->id) }}">{{ $item->name }}</a></h3>
+                                <h3><a href="{{ route('items.single', $item->id) }}">{{ $item->name }}</a></h3>
                                 <p style="color: white;">{{ $item->description }}</p>
                                 <p class="price"><span>Rs. {{ $item->price }}</span></p>
-                                <p><a href="{{ route('item.single', $item->id) }}" class="btn btn-primary btn-outline-primary">Show</a></p>
+{{--                                <a href="{{ route('items.single', $items->id) }}">{{ $items->name }}</a>--}}
+                                <p><a href="{{ route('items.single', $item->id) }}" class="btn btn-primary btn-outline-primary">Show</a></p>
                             </div>
                         </div>
                     </div>

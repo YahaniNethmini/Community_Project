@@ -55,8 +55,8 @@
                     <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
 
                     <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-{{--                    <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">register</a></li>--}}
-{{--                    <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">login</a></li>--}}
+{{--                    <li class="nav-items"><a href="{{ route('register') }}" class="nav-link">register</a></li>--}}
+{{--                    <li class="nav-items"><a href="{{ route('login') }}" class="nav-link">login</a></li>--}}
                 </ul>
             </div>
         </div>
