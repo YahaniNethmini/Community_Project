@@ -52,11 +52,26 @@
                     <li class="nav-item active"><a href="{{ route('home') }}" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="{{ route('services') }}" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="{{ route('items') }}" class="nav-link">Items</a></li>
-                    <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">About</a></li>
-
-                    <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">Contact</a></li>
-{{--                    <li class="nav-items"><a href="{{ route('register') }}" class="nav-link">register</a></li>--}}
-{{--                    <li class="nav-items"><a href="{{ route('login') }}" class="nav-link">login</a></li>--}}
+                    @auth
+                        <!-- Show user name and logout when logged in -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Welcome, {{ Auth::user()->name }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    <button type="submit" class="dropdown-item" style="border: none; background: none; cursor: pointer;">
+                                        Logout
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                    @else
+                        <!-- Show login link when not logged in -->
+                        <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+                        <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a></li>
+                    @endauth
                 </ul>
             </div>
         </div>
