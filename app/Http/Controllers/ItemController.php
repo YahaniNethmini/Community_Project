@@ -16,7 +16,17 @@ class ItemController extends Controller
     public function index()
     {
         $items = Item::all();
+//        return view('items.index', compact('items'));
         return view('items.index', compact('items'));
+    }
+
+    /**
+     * Display items page for navigation
+     */
+    public function itemsPage()
+    {
+        $items = Item::all();
+        return view('pages.items', compact('items'));
     }
 
     /**
