@@ -14,6 +14,7 @@ Route::get('/items/create', [ItemController::class, 'create'])->name('items.crea
 Route::post('/items', [ItemController::class, 'store'])->name('items.store');
 Route::get('/item/{item}', [ItemController::class, 'show'])->name('item.single');
 Route::get('/items/{item}', [ItemController::class, 'show'])->name('items.single');
+Route::get('items/all', [ItemController::class, 'itemsPage'])->name('items.all');
 
 
 Route::get('/services', [ServiceController::class, 'index'])->name('services.index');
@@ -37,4 +38,3 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
-
