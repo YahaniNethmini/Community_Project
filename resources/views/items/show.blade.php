@@ -25,18 +25,28 @@
             <div class="row">
                 <!-- Product Image Section -->
                 <div class="col-lg-6 mb-5 ftco-animate">
-                    <div class="product-image-wrapper" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.3); background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px;">
-                        <div class="image-container" style="position: relative; border-radius: 15px; overflow: hidden; background: white; padding: 20px;">
+                    <div class="product-image-wrapper"
+                         style="position: relative; border-radius: 20px; overflow: hidden;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                padding: 20px; display: flex; align-items: center; justify-content: center;">
+                        <div class="image-container"
+                             style="position: relative; border-radius: 15px; overflow: hidden;
+                    background: white; width: 200px; height: 200px; display: flex; align-items: center; justify-content: center;">
                             <img src="{{ Storage::url($item->image) }}"
-                                 class="img-fluid"
                                  alt="{{ $item->name }}"
-                                 style="width: 100%; height: auto; border-radius: 10px; transition: all 0.3s ease; cursor: zoom-in;">
+                                 style="width: 100%; height: 100%; object-fit: cover;
+                        border-radius: 15px; transition: all 0.3s ease; cursor: zoom-in;">
                         </div>
-
                         <!-- Image Overlay for Zoom Effect -->
-                        <div class="image-overlay" style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px; background: rgba(0,0,0,0.1); opacity: 0; transition: all 0.3s ease; border-radius: 15px; pointer-events: none;"></div>
+                        <div class="image-overlay"
+                             style="position: absolute; top: 20px; left: 20px; right: 20px; bottom: 20px;
+                    background: rgba(0,0,0,0.1); opacity: 0; transition: all 0.3s ease;
+                    border-radius: 15px; pointer-events: none;">
+                        </div>
                     </div>
                 </div>
+
 
                 <!-- Product Details Section -->
                 <div class="col-lg-6 product-details ftco-animate">

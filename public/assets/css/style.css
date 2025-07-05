@@ -7312,6 +7312,16 @@ h1, h2, h3, h4, h5,
 .text-primary {
   color: #9a1ea6 !important; }
 
+.slider-item, .img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Optional: set a min-height for consistent appearance */
+    min-height: 400px;
+}
+
+
+
 .ftco-navbar-light {
   background: transparent !important;
   position: absolute;
