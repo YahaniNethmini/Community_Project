@@ -4,14 +4,14 @@
 
     <section class="home-slider owl-carousel">
 
-        <div class="slider-item" style="background-image: url({{ asset('assets/images/bg_1.jpg') }});">
+        <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text justify-content-center align-items-center">
 
                     <div class="col-md-7 col-sm-12 text-center ftco-animate">
                         <h1 class="mb-3 mt-5 bread">Login</h1>
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Login</span></p>
+{{--                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Login</span></p>--}}
                     </div>
 
                 </div>
