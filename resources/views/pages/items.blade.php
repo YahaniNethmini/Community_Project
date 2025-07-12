@@ -49,11 +49,11 @@
                                 </p>
 
                                 <!-- Price Section -->
-                                <div class="price-section" style="margin-bottom: 25px;">
-                                    <span style="color: #FFD700; font-size: 1.6rem; font-weight: bold;">
-                                        Rs. {{ number_format($item->price) }}
-                                    </span>
-                                </div>
+{{--                                <div class="price-section" style="margin-bottom: 25px;">--}}
+{{--                                    <span style="color: #FFD700; font-size: 1.6rem; font-weight: bold;">--}}
+{{--                                        Rs. {{ number_format($item->price) }}--}}
+{{--                                    </span>--}}
+{{--                                </div>--}}
 
                                 <!-- Action Buttons -->
                                 <div class="action-buttons">

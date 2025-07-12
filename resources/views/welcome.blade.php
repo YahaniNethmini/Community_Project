@@ -246,7 +246,7 @@
                         @foreach($services as $service)
                             <div class="col-md-6">
                                 <div class="menu-entry service-card">
-                                    <a href="#" class="img" style="background-image: url({{ asset($service->image ?? 'assets/images/bg_3.png') }});
+                                    <a href="#" class="img" style="background-image: url({{ asset($service->image) }});
                                        background-size: cover;
                                        background-position: center;
                                        background-repeat: no-repeat;
@@ -257,7 +257,7 @@
                                     <div class="service-info">
                                         <h5>{{ $service->name }}</h5>
                                         <p>{{ $service->description }}</p>
-                                        <span class="service-price">${{ $service->price }}</span>
+{{--                                        <span class="service-price">From Rs.{{ $service->price }}</span>--}}
                                     </div>
                                 </div>
                             </div>

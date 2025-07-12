@@ -81,11 +81,11 @@
                                 <p style="color: rgba(255,255,255,0.9); font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
                                     {{ $service->description }}
                                 </p>
-                                <div class="price-section" style="margin-bottom: 25px;">
-                                    <span style="color: #FFD700; font-size: 1.8rem; font-weight: bold;">
-                                        Rs. {{ number_format($service->price) }}
-                                    </span>
-                                </div>
+{{--                                <div class="price-section" style="margin-bottom: 25px;">--}}
+{{--                                    <span style="color: #FFD700; font-size: 1.8rem; font-weight: bold;">--}}
+{{--                                        Rs. {{ number_format($service->price) }}--}}
+{{--                                    </span>--}}
+{{--                                </div>--}}
 {{--                                <a href="{{ route('service.single', $service->id) }}"--}}
 {{--                                   class="service-btn"--}}
 {{--                                   style="background: rgba(255,255,255,0.2); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; border: 2px solid rgba(255,255,255,0.3); display: inline-block;">--}}
