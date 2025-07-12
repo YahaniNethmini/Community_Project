@@ -83,21 +83,21 @@
             <div class="wrap d-md-flex align-items-xl-end">
                 <div class="info">
                     <div class="row no-gutters">
-                        <div class="col-md-4 d-flex ftco-animate">
-                            <div class="icon"><span class="icon-phone"></span></div>
-                            <div class="text">
-                                <h3 style="color: white;">077 777 777</h3>
+{{--                        <div class="col-md-4 d-flex ftco-animate">--}}
+{{--                            <div class="icon"><span class="icon-phone"></span></div>--}}
+{{--                            <div class="text">--}}
+{{--                                <h3 style="color: white;">077 777 777</h3>--}}
 {{--                                <p style="color: white;">Description text Description text Description text</p>--}}
-                            </div>
-                        </div>
-                        <div class="col-md-4 d-flex ftco-animate">
+{{--                            </div>--}}
+{{--                        </div>--}}
+                        <div class="col-md-6 d-flex ftco-animate">
                             <div class="icon"><span class="icon-my_location"></span></div>
                             <div class="text">
                                 <h3 style="color: white;">Desh E-Mart</h3>
-                                <p style="color: white;">Pabahinna, Balangoda Description text</p>
+                                <p style="color: white;">Pabahinna, Balangoda</p>
                             </div>
                         </div>
-                        <div class="col-md-4 d-flex ftco-animate">
+                        <div class="col-md-6 d-flex ftco-animate">
                             <div class="icon"><span class="icon-clock-o"></span></div>
                             <div class="text">
                                 <h3 style="color: white;">Open Monday-Friday</h3>
