@@ -83,13 +83,13 @@
                             </div>
 
                             <!-- Action Buttons -->
-                            <div class="action-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="{{ route('items.all') }}"
-                                   class="btn-secondary"
-                                   style="background: rgba(0,0,0,0.2); color: white; padding: 15px 30px; border-radius: 30px; border: 2px solid rgba(0,0,0,0.3); font-weight: 600; font-size: 1rem; transition: all 0.3s ease; text-decoration: none; display: inline-block; text-align: center; flex: 1; min-width: 140px;">
-                                    Back to Items
-                                </a>
-                            </div>
+{{--                            <div class="action-buttons" style="display: flex; gap: 15px; flex-wrap: wrap;">--}}
+{{--                                <a href="{{ route('items.all') }}"--}}
+{{--                                   class="btn-secondary"--}}
+{{--                                   style="background: rgba(0,0,0,0.2); color: white; padding: 15px 30px; border-radius: 30px; border: 2px solid rgba(0,0,0,0.3); font-weight: 600; font-size: 1rem; transition: all 0.3s ease; text-decoration: none; display: inline-block; text-align: center; flex: 1; min-width: 140px;">--}}
+{{--                                    Back to Items--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                 </div>
